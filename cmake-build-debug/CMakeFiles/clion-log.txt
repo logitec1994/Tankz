@@ -1,0 +1,4 @@
+"D:\Program\CLion 2017.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\CPlusPlus\Tankz
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/CPlusPlus/Tankz/cmake-build-debug

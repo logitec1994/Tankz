@@ -14,6 +14,7 @@ public:
     virtual void mback() = 0;
     virtual void mleft() = 0;
     virtual void mrght() = 0;
+    virtual void shoot() = 0;
 };
 
 #endif //TANKZ_ICONTROLS_HPP

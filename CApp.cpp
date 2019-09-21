@@ -19,7 +19,9 @@ CApp::~CApp()
 void CApp::run()
 {
     std::cout << "App is runned" << std::endl;
-    buffer.add('@', 2, 11);
+    // bullshit
+    buffer.add(2, 11);
+    buffer.add();
     buffer.draw();
 }
 

@@ -1,14 +1,15 @@
 #include <iostream>
 #include "CBuffer.hpp"
+#include "Setup.hpp"
 
 
 // Drawing a buffer
 void CBuffer::draw()
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < WIDTH; i++)
     {
         std::cout << std::endl;
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < HEIGHT; j++)
         {
             std::cout << buffer[i][j];
         }
@@ -23,13 +24,13 @@ void CBuffer::draw()
 */
 void CBuffer::fill()
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < WIDTH; i++)
     {
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < HEIGHT; j++)
         {
-            if (i == 0 || i == n-1)
+            if (i == 0 || i == WIDTH-1)
                 buffer[i][j] = '+';
-            else if (j == 0 || j == m-1)
+            else if (j == 0 || j == HEIGHT-1)
                 buffer[i][j] = '|';
             else
                 buffer[i][j] = ' ';
@@ -43,9 +44,14 @@ void CBuffer::fill()
 /*
 *
 */
-void CBuffer::add(char c, int x, int y)
+void CBuffer::add(int x, int y)
 {
-    buffer[x][y] = c;
+    buffer[x][y] = FTANK;
+}
+
+void CBuffer::add()
+{
+    buffer[X][Y] = FTANK;
 }
 
 // Default size 16x55 watch in CBuffer.hpp

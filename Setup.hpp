@@ -13,4 +13,11 @@ const char ETANK = '*';
 const int X = (WIDTH - 4);
 const int Y = (HEIGHT / 2);
 
+struct Unit
+{
+    int x;
+    int y;
+    char c;
+};
+
 #endif

@@ -1,9 +1,7 @@
 #include <iostream>
 #include "CApp.hpp"
-#include "CGame.hpp"
 #include "CBuffer.hpp"
 
-CGame game;
 CBuffer buffer;
 
 CApp::CApp()
